@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://localhost/music';
+var dbURI = 'mongodb://localhost/passCode';
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGODB_URI;
 }
@@ -46,7 +46,4 @@ process.on('SIGTERM', function () {
 });
 
 // BRING IN YOUR SCHEMAS & MODELS
-require('./categories');
-require('./playlists');
-require('./keywords');
-require('./notification');
+require('./passcodes');

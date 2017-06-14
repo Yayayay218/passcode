@@ -4,10 +4,8 @@ import {
     Admin, Resource, fetchUtils, Delete
 } from 'admin-on-rest';
 
-import {CategoryList, CategoryCreate, CategoryEdit} from './categories/index';
-import {PlaylistList, PlaylistCreate, PlaylistEdit} from './playlists/index';
-import {KeywordCreate, KeywordEdit, KeywordList} from './keywords/index';
-import {NotificationsList, NotificationsEdit, NotificationsCreate} from './notifications/index';
+import {PassCodeList} from './passCodes/index';
+
 
 import {Dashboard} from './dashboard';
 
@@ -28,11 +26,8 @@ const restClient = customRestClient(apiUrl, httpClient);
 const uploadCapableClient = addUploadFeature(restClient);
 
 render(
-    <Admin dashboard={Dashboard} restClient={uploadCapableClient} title="My Dashboard">
-        <Resource name="category" list={CategoryList} edit={CategoryEdit} create={CategoryCreate} remove={Delete}/>
-        <Resource name="playlist" list={PlaylistList} edit={PlaylistEdit} create={PlaylistCreate} remove={Delete}/>
-        <Resource name="keyword" list={KeywordList} edit={KeywordEdit} create={KeywordCreate} remove={Delete}/>
-        <Resource name="notifications" list={NotificationsList} edit={NotificationsEdit} create={NotificationsCreate} remove={Delete} />
+    <Admin restClient={uploadCapableClient} title="My Dashboard">
+        <Resource name="passcode" list={PassCodeList} />
     </Admin>,
     document.getElementById('root')
 );
