@@ -1,0 +1,76 @@
+user:
+  get:
+    tags:
+      - user
+    description: Get All Users
+    responses:
+      200:
+        description: OK
+        schema:
+          $ref: '#/definitions/User'
+login:
+  post:
+    tags:
+      - user
+    description:  Login
+    parameters:
+      - name: data
+        description:  activation object
+        type: object
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/Login'
+    responses:
+      200:
+        description: OK
+      400:
+        description: Wrong Passcode
+        schema:
+          $ref: '#/definitions/User'
+      404:
+        description: Email not Found
+forgotPasscode:
+  post:
+      tags:
+        - user
+      description:  Forgot Passcode
+      produces:
+        - application/json
+      parameters:
+        - name: data
+          description:  activation object
+          type: object
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/User'
+      responses:
+        200:
+          description: OK
+        400:
+          description: Wrong Passcode
+        404:
+          description: Email not Found
+changePasscode:
+  put:
+      tags:
+        - user
+      description:  Change Passcode
+      produces:
+        - application/json
+      parameters:
+        - name: data
+          description:  activation object
+          type: object
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ChangePasscode'
+      responses:
+        200:
+          description: OK
+        400:
+          description: Wrong Passcode
+        404:
+          description: Email not Found

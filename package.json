@@ -28,7 +28,11 @@
     "multer": "^1.3.0",
     "nodemailer": "^4.0.1",
     "randomstring": "^1.1.5",
-    "static-favicon": "~1.0.0"
+    "static-favicon": "~1.0.0",
+    "swagger-ui-express": "^2.0.0",
+    "js-yaml": "https://registry.npmjs.org/js-yaml/-/js-yaml-3.8.2.tgz",
+    "json-refs": "https://registry.npmjs.org/json-refs/-/json-refs-2.1.6.tgz",
+    "express-paginate": "^0.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",

@@ -27,7 +27,7 @@ const uploadCapableClient = addUploadFeature(restClient);
 
 render(
     <Admin restClient={uploadCapableClient} title="My Dashboard">
-        <Resource name="passcode" list={PassCodeList} />
+        <Resource name="passcode" options={{label: 'Passcode'}} list={PassCodeList} />
     </Admin>,
     document.getElementById('root')
 );

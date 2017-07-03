@@ -1,9 +1,7 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://localhost/passCode';
-if (process.env.NODE_ENV === 'production') {
-    dbURI = process.env.MONGODB_URI;
-}
+var dbURI = process.env.DATABASE_URL;
+
 
 mongoose.connect(dbURI);
 
@@ -46,4 +44,5 @@ process.on('SIGTERM', function () {
 });
 
 // BRING IN YOUR SCHEMAS & MODELS
-require('./passcodes');
+require('./activations');
+require('./users');

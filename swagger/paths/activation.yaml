@@ -1,0 +1,49 @@
+activation:
+  post:
+    tags:
+      - activation
+    description:  Create a New Activation
+    produces:
+      - application/json
+    parameters:
+      - name: data
+        description:  activation object
+        type: object
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/Activation'
+    responses:
+      200:
+        description: OK
+        schema:
+          $ref: '#/definitions/Activation'
+  get:
+    tags:
+      - activation
+    description: Get All Activations
+    responses:
+      200:
+        description: OK
+        schema:
+          $ref: '#/definitions/Activation'
+verify:
+  post:
+    tags:
+      - activation
+    description:  Verify Email
+    produces:
+      - application/json
+    parameters:
+      - name: data
+        description:  activation object
+        type: object
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/Verify'
+    responses:
+      200:
+        description: OK
+        schema:
+          $ref: '#/definitions/Activation'

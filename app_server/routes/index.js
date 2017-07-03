@@ -1,12 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
-var ctrlPassCode = require('../controllers/passCode.controller');
+var ctrlActivation = require('../controllers/activation.controller');
+var ctrlUser = require('../controllers/user.controller');
 
-//  Passcode APIs
-router.get('/passcode', ctrlPassCode.passCodeGetAll);
-router.post('/passcode', ctrlPassCode.passCodePost);
-router.put('/validPasscode', ctrlPassCode.activate);
-router.post('/forgotPasscode', ctrlPassCode.forgotPasscode);
+//  Activation APIs
+router.get('/activations', ctrlActivation.activationGetAll);
+router.post('/activations', ctrlActivation.activationPOST);
+router.post('/activations/verify', ctrlActivation.activate);
+
+//  User APIs
+router.get('/users', ctrlUser.userGetAll);
+router.post('/users/login', ctrlUser.login);
+router.post('/users/forgotPasscode', ctrlUser.forgotPasscode);
+router.put('/users/changePasscode', ctrlUser.newPasscode);
 
 module.exports = router;

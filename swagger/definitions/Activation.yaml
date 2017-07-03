@@ -1,0 +1,20 @@
+Activation:
+  type: object
+  required:
+    - email
+    - passCode
+  properties:
+    email:
+      type: string
+    passCode:
+      type: number
+Verify:
+  type: object
+  required:
+    - email
+    - confirmCode
+  properties:
+    email:
+      type: string
+    confirmCode:
+      type: string

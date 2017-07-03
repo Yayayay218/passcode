@@ -1,0 +1,26 @@
+swagger: '2.0'
+info:
+  $ref: info/index.yaml
+#securityDefinitions:
+#  UserSecurity:
+#    type: apiKey
+#    in: header
+#    name: Authorization
+#    scopes:
+#      admin: Admin scope
+#      user: User scope
+#      media: Media scope
+#security:
+#  - UserSecurity: []
+schemes:
+  - http
+basePath: '/api'
+produces:  
+  - application/json
+  - application/xml
+paths:
+  $ref: paths/index.yaml
+definitions:
+  $ref: definitions/index.yaml
+  
+

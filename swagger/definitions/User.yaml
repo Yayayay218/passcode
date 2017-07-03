@@ -1,0 +1,30 @@
+User:
+  type: object
+  required:
+      - email
+  properties:
+    email:
+      type: string
+Login:
+  type: object
+  required:
+    - email
+    - passCode
+  properties:
+    email:
+      type: string
+    passCode:
+      type: number
+ChangePasscode:
+  type: object
+  required:
+    - email
+    - passCode
+    - passToken
+  properties:
+    email:
+      type: string
+    passCode:
+      type: number
+    passToken:
+      type: string

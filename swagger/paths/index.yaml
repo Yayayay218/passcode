@@ -1,0 +1,12 @@
+/activations:
+  $ref: activation.yaml#/activation
+/activations/verify:
+  $ref: activation.yaml#/verify
+/users:
+  $ref: user.yaml#/user
+/users/login:
+  $ref: user.yaml#/login
+/users/forgotPasscode:
+  $ref: user.yaml#/forgotPasscode
+/users/changePasscode:
+  $ref: user.yaml#/changePasscode

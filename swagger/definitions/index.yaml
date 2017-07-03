@@ -1,0 +1,10 @@
+Activation:
+  $ref: ./Activation.yaml#/Activation
+Verify:
+  $ref: ./Activation.yaml#/Verify
+User:
+  $ref: ./User.yaml#/User
+Login:
+  $ref: ./User.yaml#/Login
+ChangePasscode:
+  $ref: ./User.yaml#/ChangePasscode
