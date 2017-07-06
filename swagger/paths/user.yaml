@@ -3,6 +3,11 @@ user:
     tags:
       - user
     description: Get All Users
+    parameters:
+      - name: search
+        description: Live Search User Email
+        in: query
+        type: string
     responses:
       200:
         description: OK
@@ -24,12 +29,6 @@ login:
     responses:
       200:
         description: OK
-      400:
-        description: Wrong Passcode
-        schema:
-          $ref: '#/definitions/User'
-      404:
-        description: Email not Found
 forgotPasscode:
   post:
       tags:
@@ -52,11 +51,30 @@ forgotPasscode:
           description: Wrong Passcode
         404:
           description: Email not Found
-changePasscode:
+
+verifyPassToken:
+  post:
+    tags:
+      - user
+    description:  Verify PassToken
+    produces:
+        - application/json
+    parameters:
+        - name: data
+          description:  activation object
+          type: object
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/VerifyPassToken'
+    responses:
+      200:
+        description: OK
+resetPasscode:
   put:
       tags:
         - user
-      description:  Change Passcode
+      description:  Reset Passcode
       produces:
         - application/json
       parameters:
@@ -66,11 +84,26 @@ changePasscode:
           in: body
           required: true
           schema:
-            $ref: '#/definitions/ChangePasscode'
+            $ref: '#/definitions/ResetPasscode'
       responses:
         200:
           description: OK
-        400:
-          description: Wrong Passcode
-        404:
-          description: Email not Found
+
+changePasscode:
+  put:
+    tags:
+      - user
+    description:  Change Passcode
+    produces:
+      - application/json
+    parameters:
+      - name: data
+        description:  activation object
+        type: object
+        in: body
+        required: true
+        schema:
+          $ref: '#/definitions/ChangePasscode'
+    responses:
+      200:
+        description: OK

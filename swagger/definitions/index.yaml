@@ -8,3 +8,9 @@ Login:
   $ref: ./User.yaml#/Login
 ChangePasscode:
   $ref: ./User.yaml#/ChangePasscode
+VerifyPassToken:
+  $ref: ./User.yaml#/VerifyPassToken
+ResetPasscode:
+  $ref: ./User.yaml#/ResetPasscode
+Notification:
+  $ref: ./Notification.yaml#/Notification

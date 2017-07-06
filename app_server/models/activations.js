@@ -7,18 +7,13 @@ var mongoosePaginate = require('mongoose-paginate');
 var activationsSchema = new mongoose.Schema({
     email: {
         type: String,
-        required: true,
-        unique: true
+        required: true
     },
     passCode: {
         type: Number,
         require: true
     },
     validToken: String,
-    isVerify: {
-        type: Boolean,
-        default: false
-    },
     updateAt: Date,
     createAt: {
         type: Date,

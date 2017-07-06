@@ -1,3 +1,5 @@
+/{email}:
+  $ref: email.yaml#/email
 /activations:
   $ref: activation.yaml#/activation
 /activations/verify:
@@ -6,7 +8,14 @@
   $ref: user.yaml#/user
 /users/login:
   $ref: user.yaml#/login
-/users/forgotPasscode:
-  $ref: user.yaml#/forgotPasscode
 /users/changePasscode:
   $ref: user.yaml#/changePasscode
+/users/forgotPasscode:
+  $ref: user.yaml#/forgotPasscode
+/users/verifyPassToken:
+  $ref: user.yaml#/verifyPassToken
+/users/resetPasscode:
+  $ref: user.yaml#/resetPasscode
+/notifications:
+  $ref: notification.yaml#/pushNotification
+

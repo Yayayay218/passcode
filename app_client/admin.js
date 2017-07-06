@@ -4,8 +4,8 @@ import {
     Admin, Resource, fetchUtils, Delete
 } from 'admin-on-rest';
 
-import {PassCodeList} from './passCodes/index';
-
+import {UserList} from './users/index';
+import {NotificationsCreate} from './notifications/index'
 
 import {Dashboard} from './dashboard';
 
@@ -27,7 +27,8 @@ const uploadCapableClient = addUploadFeature(restClient);
 
 render(
     <Admin restClient={uploadCapableClient} title="My Dashboard">
-        <Resource name="passcode" options={{label: 'Passcode'}} list={PassCodeList} />
+        <Resource name="users" list={UserList} />
+        <Resource name="notifications" list={NotificationsCreate}/>
     </Admin>,
     document.getElementById('root')
 );

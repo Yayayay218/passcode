@@ -15,7 +15,17 @@ Login:
       type: string
     passCode:
       type: number
-ChangePasscode:
+VerifyPassToken:
+  type: object
+  required:
+    - email
+    - passToken
+  properties:
+    email:
+      type: string
+    passToken:
+      type: string
+ResetPasscode:
   type: object
   required:
     - email
@@ -28,3 +38,16 @@ ChangePasscode:
       type: number
     passToken:
       type: string
+ChangePasscode:
+  type: object
+  required:
+    - email
+    - newPassCode
+    - confirmPassCode
+  properties:
+    email:
+      type: string
+    newPassCode:
+      type: number
+    confirmPassCode:
+      type: number

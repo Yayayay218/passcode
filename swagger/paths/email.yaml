@@ -1,0 +1,14 @@
+email:
+  get:
+    tags:
+      - email
+    description: Check Email Exist
+    responses:
+      200:
+        description: OK
+    parameters:
+      - name: email
+        description: Email
+        required: true
+        in: path
+        type: string

@@ -17,7 +17,9 @@ var sendJSONresponse = function (res, status, content) {
 
 var sendEmail = function (res, text, email, subject) {
     var transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false, // upgrade later with STARTTLS
         auth: {
             user: 'bmcfurniture2017@gmail.com', // Your email id
             pass: 'hermann123' // Your password
@@ -44,41 +46,60 @@ var sendEmail = function (res, text, email, subject) {
 //  POST a activation
 module.exports.activationPOST = function (req, res) {
     req.body.validToken = randomstring.generate(4);
-
     var data = req.body;
-    Activations.findOneAndUpdate({email: req.body.email}, data, {'new': true}, function (err, activation) {
-        if (err)
-            sendJSONresponse(res, 400, err);
-        else if (activation) {
-            var _text = 'Your confirmation code is ' + req.body.validToken;
-            var _subject = 'Activation Code';
-            var _email = activation.email;
-            sendEmail(res, _text, _email, _subject);
-            sendJSONresponse(res, 201, {'data': activation});
-        }
-        else {
-            var activation = new Activations(data);
 
-            var text = 'Your confirmation code is ' + req.body.validToken;
-            var subject = 'Activation Code';
-            var email = req.body.email;
-            activation.save(function (err, activation) {
-                if (err)
-                    sendJSONresponse(res, 400, err);
-                else {
-                    sendEmail(res, text, email, subject);
-                    sendJSONresponse(res, 201, {'data': activation});
-                }
-            })
+    //  Validate input
+    req.checkBody('email', 'email value should be not empty').optional().notEmpty();
+    req.checkBody('passCode', 'passcode value should be not empty').optional().notEmpty();
+    req.checkBody('passCode', 'passcode value must be number').optional().isInt();
+
+    req.getValidationResult().then(function (result) {
+        if (!result.isEmpty()) {
+            var error = result.useFirstErrorOnly().array()[0].msg;
+            return res.status(400).json({
+                success: false,
+                message: error
+            });
         }
+        Activations.findOneAndUpdate({email: req.body.email}, data, {'new': true}, function (err, activation) {
+            if (err)
+                sendJSONresponse(res, 500, {
+                    success: false,
+                    message: err
+                });
+            else if (activation) {
+                var _text = 'Your confirmation code is ' + req.body.validToken;
+                var _subject = 'Activation Code';
+                var _email = activation.email;
+                sendEmail(res, _text, _email, _subject);
+                sendJSONresponse(res, 201, {'data': activation});
+            }
+            else {
+                var activation = new Activations(data);
+
+                var text = 'Your confirmation code is ' + req.body.validToken;
+                var subject = 'Activation Code';
+                var email = req.body.email;
+                activation.save(function (err, activation) {
+                    if (err)
+                        sendJSONresponse(res, 400, err);
+                    else {
+                        sendEmail(res, text, email, subject);
+                        sendJSONresponse(res, 201, {'data': activation});
+                    }
+                })
+            }
+        });
     });
-
 };
 
 //  POST a confirmation code
 module.exports.activate = function (req, res) {
-    req.body.isVerify = true;
     var data = req.body;
+
+    //  Validate
+    req.checkBody('email', 'email value should be not empty').optional().notEmpty();
+    req.checkBody('passCode', 'passcode value should be not empty').optional().notEmpty();
     Activations.findOneAndUpdate({email: req.body.email}, data, {'new': true}, function (err, activation) {
         if (err)
             sendJSONresponse(res, 400, err);
@@ -91,7 +112,7 @@ module.exports.activate = function (req, res) {
                 user.setPassword(activation.passCode);
 
                 Activations.deleteAnActivation(activation.email, function (err) {
-                    if(err)
+                    if (err)
                         sendJSONresponse(res, 400, err);
                 });
 

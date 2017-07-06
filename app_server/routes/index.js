@@ -3,6 +3,7 @@ var router = express.Router();
 
 var ctrlActivation = require('../controllers/activation.controller');
 var ctrlUser = require('../controllers/user.controller');
+var ctrlNotification = require('../controllers/notification.controller');
 
 //  Activation APIs
 router.get('/activations', ctrlActivation.activationGetAll);
@@ -13,6 +14,14 @@ router.post('/activations/verify', ctrlActivation.activate);
 router.get('/users', ctrlUser.userGetAll);
 router.post('/users/login', ctrlUser.login);
 router.post('/users/forgotPasscode', ctrlUser.forgotPasscode);
-router.put('/users/changePasscode', ctrlUser.newPasscode);
+router.post('/users/verifyPassToken', ctrlUser.verifyPassToken);
+router.put('/users/resetPasscode', ctrlUser.resetPasscode);
+router.put('/users/changePasscode', ctrlUser.changePassCode);
+
+//  Email exist
+router.get('/:email', ctrlUser.checkEmailExist);
+
+//  Notification
+router.post('/notifications', ctrlNotification.pushNotification);
 
 module.exports = router;

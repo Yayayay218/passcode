@@ -9,11 +9,12 @@ var usersSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true
+        index: {unique: true}
     },
     hash: String,
     salt: String,
     passToken: String,
+    deviceToken: String,
     updateAt: Date,
     createAt: {
         type: Date,

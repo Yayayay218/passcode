@@ -10,7 +10,7 @@ RUN chown -R app:app $HOME/*
 
 USER app
 WORKDIR $HOME/protector-backend
-RUN npm install
+RUN npm install --production
 
 
 USER root

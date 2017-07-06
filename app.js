@@ -7,17 +7,17 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
-var paginate 	= require('express-paginate');
-var swaggerUi 	= require('swagger-ui-express');
+var paginate = require('express-paginate');
+var swaggerUi = require('swagger-ui-express');
 
-var JsonRefs 	= require('json-refs');
-var YAML 		= require('js-yaml');
-
-
+var JsonRefs = require('json-refs');
+var YAML = require('js-yaml');
+var cors = require('cors'); // call the cors to fix access control bug.
 
 //Bring the data model
 require('./app_server/models/db');
 
+app.use(cors());
 var routesApi = require('./app_server/routes/index');
 
 app.use(paginate.middleware(10, 50)); // limit=10,  maxLimit=50
@@ -27,18 +27,18 @@ app.use(logger('dev'));
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: false}));
 app.use(expressValidator({
-    errorFormatter: function(param, msg, value) {
+    errorFormatter: function (param, msg, value) {
         var namespace = param.split('.')
-            , root    = namespace.shift()
+            , root = namespace.shift()
             , formParam = root;
 
-        while(namespace.length) {
+        while (namespace.length) {
             formParam += '[' + namespace.shift() + ']';
         }
         return {
-            param : formParam,
-            msg   : msg,
-            value : value
+            param: formParam,
+            msg: msg,
+            value: value
         };
     }
 }));
@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', routesApi);
 
-var optionsRef 	= {
+var optionsRef = {
     filter: ['relative', 'remote'],
     loaderOptions: {
         processContent: function (res, cb) {

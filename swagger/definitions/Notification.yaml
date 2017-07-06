@@ -1,0 +1,16 @@
+Notification:
+  type: object
+  required:
+    - title
+    - text
+    - notificationType
+    - notificationLink
+  properties:
+    title:
+      type: string
+    text:
+      type: string
+    notificationType:
+      type: number
+    notificationLink:
+      type: string
