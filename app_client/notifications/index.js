@@ -29,7 +29,7 @@ export const NotificationsCreate = (props) => (
             <TextInput source="text" label="Notification Text" validate={[required]}/>
             <SelectInput source="notificationType" label="Notification Type" allowEmpty choices={[
                 {id: '0', name: 'Normal Notification'},
-                {id: '2', name: 'Popup Notification'}
+                {id: '1', name: 'Popup Notification'}
             ]}/>
             <TextInput source="notificationLink" label="Notification Link" validate={[required]}/>
         </SimpleForm>

@@ -254,3 +254,31 @@ module.exports.changePassCode = function (req, res) {
         });
     })
 };
+
+module.exports.deviceTokenPOST = function (req, res) {
+    Users.findOne({email: req.body.email}, function (err, user) {
+        if(err)
+            return sendJSONresponse(res, 500, {
+                success: false,
+                message: err
+            });
+        if(!user)
+            return sendJSONresponse(res, 404, {
+                success: false,
+                message: 'User not Found'
+            });
+        user.deviceToken = req.body.deviceToken;
+        user.save(function (err, user) {
+            if(err)
+                return sendJSONresponse(res, 500, {
+                    success:false,
+                    message: err
+                });
+            return sendJSONresponse(res, 200, {
+                success: true,
+                message: 'Post device token successfull! ',
+                data: user
+            })
+        });
+    })
+};

@@ -51,3 +51,13 @@ ChangePasscode:
       type: number
     confirmPassCode:
       type: number
+DeviceToken:
+  type: object
+  required:
+    - email
+    - deviceToken
+  properties:
+    email:
+      type: string
+    deviceToken:
+      type: string

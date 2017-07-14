@@ -15,6 +15,17 @@ var sendJSONresponse = function (res, status, content) {
     res.json(content);
 };
 
+var checkEmailExist = function (email) {
+    return new Promise(function (resolve, reject) {
+        Users.findOne({email: email}, function (err, user) {
+            if (err) {
+                reject(err);
+            }
+            resolve(user);
+        });
+    });
+};
+
 var sendEmail = function (res, text, email, subject) {
     var transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -61,35 +72,41 @@ module.exports.activationPOST = function (req, res) {
                 message: error
             });
         }
-        Activations.findOneAndUpdate({email: req.body.email}, data, {'new': true}, function (err, activation) {
-            if (err)
-                sendJSONresponse(res, 500, {
-                    success: false,
-                    message: err
-                });
-            else if (activation) {
-                var _text = 'Your confirmation code is ' + req.body.validToken;
-                var _subject = 'Activation Code';
-                var _email = activation.email;
-                sendEmail(res, _text, _email, _subject);
-                sendJSONresponse(res, 201, {'data': activation});
-            }
-            else {
-                var activation = new Activations(data);
-
-                var text = 'Your confirmation code is ' + req.body.validToken;
-                var subject = 'Activation Code';
-                var email = req.body.email;
-                activation.save(function (err, activation) {
+        checkEmailExist(req.body.email)
+            .then(function (data) {
+                if (data.email === req.body.email)
+                    return sendJSONresponse(res, 400, {
+                        success: false,
+                        message: 'Email has already exist! '
+                    });
+            })
+            .catch(function (err) {
+                Activations.findOneAndUpdate({email: req.body.email}, data, {'new': true}, function (err, activation) {
                     if (err)
-                        sendJSONresponse(res, 400, err);
-                    else {
-                        sendEmail(res, text, email, subject);
-                        sendJSONresponse(res, 201, {'data': activation});
+                        return sendJSONresponse(res, 500, {
+                            success: false,
+                            message: err
+                        });
+                    if (activation) {
+                        var _text = 'Your confirmation code is ' + req.body.validToken;
+                        var _subject = 'Activation Code';
+                        var _email = activation.email;
+                        sendEmail(res, _text, _email, _subject);
+                        return sendJSONresponse(res, 201, {'data': activation});
                     }
-                })
-            }
-        });
+                    var activation = new Activations(data);
+
+                    var text = 'Your confirmation code is ' + req.body.validToken;
+                    var subject = 'Activation Code';
+                    var email = req.body.email;
+                    activation.save(function (err, activation) {
+                        if (err)
+                            return sendJSONresponse(res, 400, err);
+                        sendEmail(res, text, email, subject);
+                        return sendJSONresponse(res, 201, {'data': activation});
+                    })
+                });
+            });
     });
 };
 
@@ -97,12 +114,15 @@ module.exports.activationPOST = function (req, res) {
 module.exports.activate = function (req, res) {
     var data = req.body;
 
+
     //  Validate
     req.checkBody('email', 'email value should be not empty').optional().notEmpty();
     req.checkBody('passCode', 'passcode value should be not empty').optional().notEmpty();
+
     Activations.findOneAndUpdate({email: req.body.email}, data, {'new': true}, function (err, activation) {
         if (err)
             sendJSONresponse(res, 400, err);
+
         else {
             if (activation && activation.validToken === req.body.confirmCode) {
                 var data = {
@@ -123,7 +143,7 @@ module.exports.activate = function (req, res) {
                 });
                 return;
             }
-            sendJSONresponse(res, 404, {'message': 'Wrong Valid '});
+            sendJSONresponse(res, 400, {'message': 'Wrong Valid '});
         }
     })
 };

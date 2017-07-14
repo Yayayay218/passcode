@@ -2,141 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1b001ce-a3b9-42fa-9852-10400ba074de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_client/notifications/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_server/config/constant.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_server/config/notification.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_server/controllers/notification.controller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swagger/definitions/Notification.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swagger/paths/email.yaml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/swagger/paths/notification.yaml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@types/express/types-metadata.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/@types/mime/types-metadata.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app_client/passCodes/index.js" afterPath="$PROJECT_DIR$/app_client/users/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/doc/logo.png" afterPath="$PROJECT_DIR$/node_modules/apn/doc/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKey.p12" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKey.p12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKeyOpenSSL.p12" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKeyOpenSSL.p12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKeyPassphrase.p12" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKeyPassphrase.p12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/multipleKeys.p12" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/multipleKeys.p12" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/support/initializeTest.pfx" afterPath="$PROJECT_DIR$/node_modules/apn/test/support/initializeTest.pfx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/admin.js" afterPath="$PROJECT_DIR$/app_client/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_client/notifications/index.js" afterPath="$PROJECT_DIR$/app_client/notifications/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/controllers/activation.controller.js" afterPath="$PROJECT_DIR$/app_server/controllers/activation.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/controllers/notification.controller.js" afterPath="$PROJECT_DIR$/app_server/controllers/notification.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/controllers/user.controller.js" afterPath="$PROJECT_DIR$/app_server/controllers/user.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/models/activations.js" afterPath="$PROJECT_DIR$/app_server/models/activations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/models/users.js" afterPath="$PROJECT_DIR$/app_server/models/users.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_server/routes/index.js" afterPath="$PROJECT_DIR$/app_server/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf" afterPath="$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compose/node/Dockerfile" afterPath="$PROJECT_DIR$/compose/node/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/LICENSE" afterPath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/index.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/package.json" afterPath="$PROJECT_DIR$/node_modules/@types/express-serve-static-core/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/express/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/express/index.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/express/package.json" afterPath="$PROJECT_DIR$/node_modules/@types/express/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/mime/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/mime/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/mime/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/mime/index.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/@types/mime/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/node/LICENSE" afterPath="$PROJECT_DIR$/node_modules/@types/node/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/.npmignore" afterPath="$PROJECT_DIR$/node_modules/apn/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/apn/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/ChangeLog.md" afterPath="$PROJECT_DIR$/node_modules/apn/ChangeLog.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/LICENSE" afterPath="$PROJECT_DIR$/node_modules/apn/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/README.md" afterPath="$PROJECT_DIR$/node_modules/apn/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/doc/apn.markdown" afterPath="$PROJECT_DIR$/node_modules/apn/doc/apn.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/doc/notification.markdown" afterPath="$PROJECT_DIR$/node_modules/apn/doc/notification.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/doc/provider.markdown" afterPath="$PROJECT_DIR$/node_modules/apn/doc/provider.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/doc/testing.markdown" afterPath="$PROJECT_DIR$/node_modules/apn/doc/testing.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/doc/whats-new.markdown" afterPath="$PROJECT_DIR$/node_modules/apn/doc/whats-new.markdown" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/examples/sending-multiple-notifications.js" afterPath="$PROJECT_DIR$/node_modules/apn/examples/sending-multiple-notifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/examples/sending-to-multiple-devices.js" afterPath="$PROJECT_DIR$/node_modules/apn/examples/sending-to-multiple-devices.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/apn/index.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/index.js" afterPath="$PROJECT_DIR$/node_modules/apn/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/client.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/config.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/ca/prepare.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/ca/prepare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/APNCertificate.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/APNCertificate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/APNKey.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/APNKey.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/load.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/oids.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/oids.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parse.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parsePemCertificate.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parsePemCertificate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parsePemKey.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parsePemKey.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parsePkcs12.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/parsePkcs12.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/prepare.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/prepare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/validate.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/certificate/validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/index.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/resolve.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/resolve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/credentials/token/prepare.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/credentials/token/prepare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/notification/apsProperties.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/notification/apsProperties.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/notification/index.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/notification/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/protocol/endpoint.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/protocol/endpoint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/protocol/endpointManager.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/protocol/endpointManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/provider.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/token.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/token.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/lib/util/extend.js" afterPath="$PROJECT_DIR$/node_modules/apn/lib/util/extend.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/mock/client.js" afterPath="$PROJECT_DIR$/node_modules/apn/mock/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/mock/index.js" afterPath="$PROJECT_DIR$/node_modules/apn/mock/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/package.json" afterPath="$PROJECT_DIR$/node_modules/apn/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/apn/test/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/client.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/client.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/config.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/ca/prepare.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/ca/prepare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/APNCertificate.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/APNCertificate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/APNKey.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/APNKey.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/load.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/load.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parse.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parse.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parsePemCertificate.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parsePemCertificate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parsePemKey.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parsePemKey.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parsePkcs12.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/parsePkcs12.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/prepare.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/prepare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/validate.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/certificate/validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/resolve.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/resolve.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/cert.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/cert.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKey.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certIssuerKey.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certKey.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certKey.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certKeyProduction.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certKeyProduction.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certProduction.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/certProduction.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/key.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/key.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyEncrypted.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyEncrypted.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyIssuer.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyIssuer.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyPKCS8.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyPKCS8.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyPKCS8Encrypted.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyPKCS8Encrypted.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyProduction.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/keyProduction.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/multipleKeys.pem" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/support/multipleKeys.pem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/credentials/token/prepare.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/credentials/token/prepare.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/mocha.opts" afterPath="$PROJECT_DIR$/node_modules/apn/test/mocha.opts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/notification/apsProperties.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/notification/apsProperties.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/notification/index.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/notification/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/protocol/endpoint.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/protocol/endpoint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/protocol/endpointManager.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/protocol/endpointManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/provider.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/provider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/support.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/support/initializeTest.crt" afterPath="$PROJECT_DIR$/node_modules/apn/test/support/initializeTest.crt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/support/initializeTest.key" afterPath="$PROJECT_DIR$/node_modules/apn/test/support/initializeTest.key" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/apn/test/token.js" afterPath="$PROJECT_DIR$/node_modules/apn/test/token.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/.eslintrc" afterPath="$PROJECT_DIR$/node_modules/express-validator/.eslintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/.npmignore" afterPath="$PROJECT_DIR$/node_modules/express-validator/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/node_modules/express-validator/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/LICENSE" afterPath="$PROJECT_DIR$/node_modules/express-validator/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/README.md" afterPath="$PROJECT_DIR$/node_modules/express-validator/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/index.d.ts" afterPath="$PROJECT_DIR$/node_modules/express-validator/index.d.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/index.js" afterPath="$PROJECT_DIR$/node_modules/express-validator/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/lib/express_validator.js" afterPath="$PROJECT_DIR$/node_modules/express-validator/lib/express_validator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/lib/utils.js" afterPath="$PROJECT_DIR$/node_modules/express-validator/lib/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/package.json" afterPath="$PROJECT_DIR$/node_modules/express-validator/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express-validator/tsconfig.json" afterPath="$PROJECT_DIR$/node_modules/express-validator/tsconfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/bundle.js" afterPath="$PROJECT_DIR$/public/js/bundle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swagger/definitions/User.yaml" afterPath="$PROJECT_DIR$/swagger/definitions/User.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swagger/definitions/index.yaml" afterPath="$PROJECT_DIR$/swagger/definitions/index.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swagger/paths/index.yaml" afterPath="$PROJECT_DIR$/swagger/paths/index.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/swagger/paths/user.yaml" afterPath="$PROJECT_DIR$/swagger/paths/user.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin.html" afterPath="$PROJECT_DIR$/views/admin.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -151,77 +27,32 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_client/notifications/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_server/controllers/user.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activations.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_server/models/activations.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="activation.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_server/controllers/activation.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+            <state relative-caret-position="336">
+              <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notification.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app_server/controllers/notification.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="984">
+              <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_server/models/users.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app_client/notifications/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="336">
+              <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_client/admin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#295#344#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -305,26 +136,26 @@
         <option value="$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf" />
         <option value="$PROJECT_DIR$/compose/node/Dockerfile" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/swagger/paths/email.yaml" />
         <option value="$PROJECT_DIR$/app_client/users/index.js" />
         <option value="$PROJECT_DIR$/views/admin.html" />
-        <option value="$PROJECT_DIR$/swagger/definitions/User.yaml" />
-        <option value="$PROJECT_DIR$/swagger/paths/user.yaml" />
-        <option value="$PROJECT_DIR$/app_server/routes/index.js" />
         <option value="$PROJECT_DIR$/app_server/config/notification.js" />
         <option value="$PROJECT_DIR$/swagger/definitions/Notification.yaml" />
         <option value="$PROJECT_DIR$/app_server/config/constant.js" />
-        <option value="$PROJECT_DIR$/swagger/paths/index.yaml" />
         <option value="$PROJECT_DIR$/swagger/paths/notification.yaml" />
-        <option value="$PROJECT_DIR$/swagger/definitions/index.yaml" />
         <option value="$PROJECT_DIR$/app_client/admin.js" />
-        <option value="$PROJECT_DIR$/app_client/notifications/index.js" />
         <option value="$PROJECT_DIR$/app_server/models/activations.js" />
         <option value="$PROJECT_DIR$/app_server/models/users.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app_server/controllers/user.controller.js" />
+        <option value="$PROJECT_DIR$/app_server/routes/index.js" />
+        <option value="$PROJECT_DIR$/swagger/definitions/User.yaml" />
+        <option value="$PROJECT_DIR$/swagger/definitions/index.yaml" />
+        <option value="$PROJECT_DIR$/swagger/paths/user.yaml" />
+        <option value="$PROJECT_DIR$/swagger/paths/index.yaml" />
         <option value="$PROJECT_DIR$/app_server/controllers/activation.controller.js" />
         <option value="$PROJECT_DIR$/app_server/controllers/notification.controller.js" />
+        <option value="$PROJECT_DIR$/app_client/notifications/index.js" />
       </list>
     </option>
   </component>
@@ -341,9 +172,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -361,6 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -401,7 +234,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -415,24 +248,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app_server" />
+              <option name="myItemId" value="app_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protector-backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protector-backend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="app_client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="notifications" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spotz-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../kouti-backend" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
@@ -584,15 +429,20 @@
       <workItem from="1499218863647" duration="6995000" />
       <workItem from="1499305311540" duration="15000" />
       <workItem from="1499305750971" duration="12688000" />
-      <workItem from="1499328965325" duration="2042000" />
+      <workItem from="1499328965325" duration="5650000" />
+      <workItem from="1499391922665" duration="5056000" />
+      <workItem from="1499415286153" duration="6179000" />
+      <workItem from="1499743568864" duration="2440000" />
+      <workItem from="1499760432968" duration="370000" />
+      <workItem from="1499846549181" duration="735000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249714000" />
+    <option name="totallyTimeSpent" value="268102000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20796943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -602,7 +452,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34832636" sideWeight="0.49563318" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28340518" sideWeight="0.49563318" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -751,20 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -776,13 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -800,27 +629,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="65" lean-forward="true" selection-start-line="24" selection-start-column="65" selection-end-line="24" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/definitions/User.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="51" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/config/notification.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,20 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/paths/user.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="71" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/paths/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="43" lean-forward="false" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -859,13 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/definitions/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_client/users/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -875,38 +666,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="484">
           <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#295#344#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_client/notifications/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="75" selection-end-line="29" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/models/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="264">
           <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/controllers/user.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="91" column="26" lean-forward="false" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,22 +682,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="60" lean-forward="true" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger/definitions/User.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="53" column="11" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger/definitions/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger/paths/user.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="126" column="23" lean-forward="false" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swagger/paths/index.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="53" lean-forward="true" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_server/controllers/user.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="280" column="14" lean-forward="false" selection-start-line="280" selection-start-column="14" selection-end-line="280" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/activation.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        <state relative-caret-position="336">
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/controllers/notification.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="984">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_client/notifications/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="36" column="2" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="36" selection-end-column="2" />
           <folding />
         </state>
       </provider>

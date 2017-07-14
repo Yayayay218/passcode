@@ -16,6 +16,8 @@
   $ref: user.yaml#/verifyPassToken
 /users/resetPasscode:
   $ref: user.yaml#/resetPasscode
+/users/deviceToken:
+  $ref: user.yaml#/deviceToken
 /notifications:
   $ref: notification.yaml#/pushNotification
 

@@ -17,6 +17,7 @@ router.post('/users/forgotPasscode', ctrlUser.forgotPasscode);
 router.post('/users/verifyPassToken', ctrlUser.verifyPassToken);
 router.put('/users/resetPasscode', ctrlUser.resetPasscode);
 router.put('/users/changePasscode', ctrlUser.changePassCode);
+router.post('/users/deviceToken', ctrlUser.deviceTokenPOST);
 
 //  Email exist
 router.get('/:email', ctrlUser.checkEmailExist);

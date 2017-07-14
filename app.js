@@ -18,6 +18,7 @@ var cors = require('cors'); // call the cors to fix access control bug.
 require('./app_server/models/db');
 
 app.use(cors());
+
 var routesApi = require('./app_server/routes/index');
 
 app.use(paginate.middleware(10, 50)); // limit=10,  maxLimit=50
