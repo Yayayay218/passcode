@@ -32,13 +32,13 @@ var sendEmail = function (res, text, email, subject) {
         port: 587,
         secure: false, // upgrade later with STARTTLS
         auth: {
-            user: 'bmcfurniture2017@gmail.com', // Your email id
-            pass: 'hermann123' // Your password
+            user: 'protector@astraler.com', // Your email id
+            pass: 'a=Z5E>9g' // Your password
         }
     });
 
     var mailOptions = {
-        from: 'bmcfurniture2017@gmail.com', // sender address
+        from: 'protector@astraler.com', // sender address
         to: email, // list of receivers
         subject: subject, // Subject line
         text: text //, // plaintext body,
