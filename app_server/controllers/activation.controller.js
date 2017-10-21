@@ -113,8 +113,6 @@ module.exports.activationPOST = function (req, res) {
 //  POST a confirmation code
 module.exports.activate = function (req, res) {
     var data = req.body;
-
-
     //  Validate
     req.checkBody('email', 'email value should be not empty').optional().notEmpty();
     req.checkBody('passCode', 'passcode value should be not empty').optional().notEmpty();
