@@ -47,6 +47,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'views')));
 
 app.use(express.static(path.join(__dirname, 'node_modules/swagger-ui-express/static')));
+app.use(express.static(path.join(__dirname, 'protector-frontend')));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api', routesApi);

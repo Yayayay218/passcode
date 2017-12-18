@@ -9,8 +9,8 @@ module.exports = {
     },
 
     PRD_OPTS: {
-        cert: "app_server/keys/product/cert.pem",
-        key: "app_server/keys/product/key.pem",
+        cert: "app_server/keys/prod/cert_prod.pem",
+        key: "app_server/keys/prod/key_prod.pem",
         production: false,
     }
 };

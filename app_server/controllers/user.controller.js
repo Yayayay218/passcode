@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 var nodemailer = require('nodemailer');
+var sparkPostTransport = require('nodemailer-sparkpost-transport');
 
 var Users = mongoose.model('Users');
 var Activations = mongoose.model('Activations');
@@ -15,20 +16,24 @@ var sendJSONresponse = function (res, status, content) {
     res.json(content);
 };
 
-var sendEmail = function (res, text, email, subject) {
-    var transporter = nodemailer.createTransport({
-        service: 'Gmail',
-        auth: {
-            user: 'protector@astraler.com', // Your email id
-            pass: 'a=Z5E>9g' // Your password
-        }
-    });
+var sendEmail = function (res, text, email, subject, html) {
+    // var transporter = nodemailer.createTransport({
+    //     service: 'Gmail',
+    //     auth: {
+    //         user: 'protector@astraler.com', // Your email id
+    //         pass: 'a=Z5E>9g' // Your password
+    //     }
+    // });
+    var transporter = nodemailer.createTransport(sparkPostTransport({
+        sparkPostApiKey: 'b83d41344bfa22d6a089a93c19bd8364b7c3ce42'
+    }));
 
     var mailOptions = {
-        from: 'protector@astraler.com', // sender address
+        from: 'support@getprotector.com', // sender address
         to: email, // list of receivers
         subject: subject, // Subject line
-        text: text //, // plaintext body,
+        text: text, //, // plaintext body,
+        html: html
     };
 
     transporter.sendMail(mailOptions, function (error, info) {
@@ -152,9 +157,13 @@ module.exports.forgotPasscode = function (req, res) {
                 message: 'Email not Found'
             });
         var _text = 'Your verification code is ' + req.body.passToken;
-        var _subject = 'Forgot Pass Code';
+        var _html = 'Hello, If you have lost your passcode and wish to reset it, ' +
+            'use this verification code to get started: ' +
+            '<b>' + req.body.passToken + '</b>' +'<br>'+
+            'If you did not make this request, just ignore this email';
+        var _subject = 'Protector Passcode Reset';
         var _email = user.email;
-        sendEmail(res, _text, _email, _subject);
+        sendEmail(res, _text, _email, _subject, _html);
 
         user.passToken = req.body.passToken;
         user.save();

@@ -16,10 +16,10 @@ var sendJSONResponse = function (res, status, content) {
 
 module.exports.pushNotification = function (req, res) {
     var data = req.body;
-    // if (process.env.NODE_ENV === 'production')
-    //     var apnProvider = new apn.Provider(cfgNotification.PRD_OPTS);
-    // else
-    var apnProvider = new apn.Provider(cfgNotification.DEV_OPTS);
+    if (process.env.NODE_ENV === 'production')
+        var apnProvider = new apn.Provider(cfgNotification.PRD_OPTS);
+    else
+        var apnProvider = new apn.Provider(cfgNotification.DEV_OPTS);
     Users.find(function (err, user) {
         if (err)
             sendJSONResponse(res, 500, {
