@@ -7,6 +7,8 @@ mongoose.Promise = global.Promise;
 var randomstring = require('randomstring');
 var nodemailer = require('nodemailer');
 var sparkPostTransport = require('nodemailer-sparkpost-transport');
+var fs = require("fs");
+var ejs = require("ejs");
 
 var Users = mongoose.model('Users');
 var Activations = mongoose.model('Activations');
@@ -45,7 +47,7 @@ var sendEmail = function (res, text, email, subject, html) {
         from: 'support@getprotector.com', // sender address
         to: email, // list of receivers
         subject: subject, // Subject line
-        text: text ,//, // plaintext body,
+        text: text,//, // plaintext body,
         html: html
     };
 
@@ -93,34 +95,35 @@ module.exports.activationPOST = function (req, res) {
                             message: err
                         });
                     if (activation) {
-                        var _text = 'Hello, We just need to verify ' +
-                            'your email address to complete your ' +
-                            'Protector signup. '+'<b>' + req.body.validToken + '</b>';
-                        var _html = 'Hello, We just need to verify ' +
-                            'your email address to complete your ' +
-                            'Protector signup. '+'<b>' + req.body.validToken + '</b>' +'<br>'+
-                            'If you did not make this request, just ignore this email' ;
-                        var _subject = 'Please confirm your email address for your Protector account';
-                        var _email = activation.email;
-                        sendEmail(res, _text, _email, _subject, _html);
-                        return sendJSONresponse(res, 201, {'data': activation});
+                        ejs.renderFile(__dirname + "/email_template/activation.ejs", {passcode: req.body.validToken}, function (err, data) {
+                            if (err)
+                                console.log(err)
+                            var _text = 'Hello, We just need to verify ' +
+                                'your email address to complete your ' +
+                                'Protector signup. ' + '<b>' + req.body.validToken + '</b>';
+                            var _html = data
+                            var _subject = 'Please confirm your email address for your Protector account';
+                            var _email = activation.email;
+                            sendEmail(res, _text, _email, _subject, _html);
+                            return sendJSONresponse(res, 201, {'data': activation});
+                        })
                     }
                     var activation = new Activations(data);
-
-                    var text = 'Hello, We just need to verify ' +
-                        'your email address to complete your ' +
-                        'Protector signup. <b>' + req.body.validToken + '</b>';
-                    var html = 'Hello, We just need to verify ' +
-                        'your email address to complete your ' +
-                        'Protector signup. '+'<b>' + req.body.validToken + '</b>' +'<br>'+
-                        'If you did not make this request, just ignore this email';
-                    var subject = 'Please confirm your email address for your Protector account';
-                    var email = req.body.email;
-                    activation.save(function (err, activation) {
+                    ejs.renderFile(__dirname + "/email_template/activation.ejs", {passcode: req.body.validToken}, function (err, data) {
                         if (err)
-                            return sendJSONresponse(res, 400, err);
-                        sendEmail(res, text, email, subject, html);
-                        return sendJSONresponse(res, 201, {'data': activation});
+                            console.log(err)
+                        var text = 'Hello, We just need to verify ' +
+                            'your email address to complete your ' +
+                            'Protector signup. <b>' + req.body.validToken + '</b>';
+                        var html = data
+                        var subject = 'Please confirm your email address for your Protector account';
+                        var email = req.body.email;
+                        activation.save(function (err, activation) {
+                            if (err)
+                                return sendJSONresponse(res, 400, err);
+                            sendEmail(res, text, email, subject, html);
+                            return sendJSONresponse(res, 201, {'data': activation});
+                        })
                     })
                 });
             });
@@ -150,27 +153,25 @@ module.exports.activate = function (req, res) {
                     if (err)
                         sendJSONresponse(res, 400, err);
                 });
-                var text = ''
-                var html = 'Hello, ' +
-                    'your email address to complete your ' +'<br>' +
-                    'Welcome to Protector! '+'<br>' +
-                    'Thank you for joining us. We hope you could have great time ahead with our signature features:'+'<br>' +
-                    'Multi-layer security: App lock, album lock, in-app authentication.'+'<br>' +
-                    'Superfast import and export take you no time.'+'<br>' +
-                    'Intuitive photo viewing and video playing.'+'<br>' +
-                    'Auto backup, synced on all devices.'+'<br>' +
-                    'Decoy safe, break-in tracking.'
-                var subject = 'Welcome to '+req.body.email+'! Let’s get started';
-                var email = req.body.email;
-                user.save(function (err, user) {
-                    if (err)
-                        return sendJSONresponse(res, 400, err);
-                    sendEmail(res, text, email, subject, html);
-                    return sendJSONresponse(res, 201, user);
-                });
-                return;
+                ejs.renderFile(__dirname + "/email_template/welcome.ejs", {passcode: req.body.passToken}, function (err, data) {
+                    if(err)
+                        console.log(err)
+                    var text = ''
+                    var html = data
+                    var subject = 'Welcome to ' + req.body.email + '! Let’s get started';
+                    var email = req.body.email;
+                    user.save(function (err, user) {
+                        if (err)
+                            return sendJSONresponse(res, 400, err);
+                        sendEmail(res, text, email, subject, html);
+                        return sendJSONresponse(res, 201, user);
+                    });
+                })
+
+                // return;
             }
-            sendJSONresponse(res, 400, {'message': 'Wrong Valid '});
+            else
+                return sendJSONresponse(res, 400, {'message': 'Wrong Valid '});
         }
     })
 };

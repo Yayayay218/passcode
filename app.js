@@ -51,6 +51,11 @@ app.use(express.static(path.join(__dirname, 'protector-frontend')));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+// // set the view engine to ejs
+// app.set('view engine', 'ejs');
+// app.get('/email', function(req, res) {
+//     res.render('views/template')
+// });
 app.use('/api', routesApi);
 
 var optionsRef = {

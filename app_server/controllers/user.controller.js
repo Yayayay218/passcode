@@ -3,6 +3,8 @@
  */
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
+var fs = require("fs");
+var ejs = require("ejs");
 
 var nodemailer = require('nodemailer');
 var sparkPostTransport = require('nodemailer-sparkpost-transport');
@@ -156,14 +158,17 @@ module.exports.forgotPasscode = function (req, res) {
                 success: false,
                 message: 'Email not Found'
             });
-        var _text = 'Your verification code is ' + req.body.passToken;
-        var _html = 'Hello, If you have lost your passcode and wish to reset it, ' +
-            'use this verification code to get started: ' +
-            '<b>' + req.body.passToken + '</b>' +'<br>'+
-            'If you did not make this request, just ignore this email';
-        var _subject = 'Protector Passcode Reset';
-        var _email = user.email;
-        sendEmail(res, _text, _email, _subject, _html);
+        ejs.renderFile(__dirname + "/email_template/template.ejs", {passcode: req.body.passToken}, function (err, data) {
+            if (err)
+                console.log(err)
+            // console.log(data)
+            var _text = 'Your verification code is ' + req.body.passToken;
+            var _html = data
+            var _subject = 'Protector Passcode Reset';
+            var _email = user.email;
+            sendEmail(res, _text, _email, _subject, _html);
+        })
+
 
         user.passToken = req.body.passToken;
         user.save();
