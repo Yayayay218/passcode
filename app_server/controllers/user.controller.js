@@ -162,7 +162,7 @@ module.exports.forgotPasscode = function (req, res) {
             if (err)
                 console.log(err)
             // console.log(data)
-            var _text = 'Your verification code is ' + req.body.passToken;
+            var _text = data
             var _html = data
             var _subject = 'Protector Passcode Reset';
             var _email = user.email;
