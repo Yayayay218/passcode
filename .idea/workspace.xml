@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1b001ce-a3b9-42fa-9852-10400ba074de" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/protector-frontend/img/icons/facebook-turbo.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/protector-frontend/img/icons/turbodl.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/protector-frontend/img/icons/twitter-turbo.svg" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/protector-frontend/pages/base.html" afterPath="$PROJECT_DIR$/protector-frontend/pages/base.html" />
     </list>
@@ -20,7 +23,7 @@
       <file leaf-file-name="docker-compose.prod.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
+            <state relative-caret-position="0">
               <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
               <folding />
             </state>
@@ -30,16 +33,29 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protector-frontend/pages/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+            <state relative-caret-position="205">
+              <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
               <folding>
-                <marker date="1522210612567" expanded="false" signature="2152:2167" ph="..." />
-                <marker date="1522210612567" expanded="false" signature="4026:4037" ph="..." />
-                <marker date="1522210612567" expanded="false" signature="4110:4143" ph="..." />
-                <marker date="1522210612567" expanded="false" signature="4483:4494" ph="..." />
-                <marker date="1522210612567" expanded="false" signature="4567:4600" ph="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1522244550627" expanded="false" signature="3237:3252" ph="..." />
+                <marker date="1522244550627" expanded="false" signature="4871:4882" ph="..." />
+                <marker date="1522244550627" expanded="false" signature="4947:4980" ph="..." />
+                <marker date="1522244550627" expanded="false" signature="5280:5291" ph="..." />
+                <marker date="1522244550627" expanded="false" signature="5356:5389" ph="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitter-turbo.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/twitter-turbo.svg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -213,6 +229,19 @@
               <item name="passcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="passcode" type="462c0819:PsiDirectoryNode" />
               <item name="protector-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="passcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="passcode" type="462c0819:PsiDirectoryNode" />
+              <item name="protector-frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="passcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="passcode" type="462c0819:PsiDirectoryNode" />
+              <item name="protector-frontend" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -224,21 +253,21 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../02_Turbodl/turbodl-frontend" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app_server/keys" />
-      <recent name="$PROJECT_DIR$/app_server" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protector-frontend/img/icons" />
       <recent name="$PROJECT_DIR$/protector-frontend/img" />
       <recent name="$PROJECT_DIR$/protector-frontend/pages" />
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/app_server/assets/images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app_server/keys" />
+      <recent name="$PROJECT_DIR$/app_server" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -435,12 +464,12 @@
       <workItem from="1521788071072" duration="707000" />
       <workItem from="1521961084532" duration="628000" />
       <workItem from="1522026430112" duration="29000" />
-      <workItem from="1522210577637" duration="500000" />
+      <workItem from="1522210577637" duration="2995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344265000" />
+    <option name="totallyTimeSpent" value="346760000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1270" height="1028" extended-state="0" />
@@ -480,41 +509,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swagger/definitions/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/paths/user.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="126" column="23" lean-forward="false" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/paths/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swagger/paths/notification.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/processes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -795,22 +789,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
+        <state relative-caret-position="0">
           <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/twitter.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/turbodl.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/twitter-turbo.svg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protector-frontend/pages/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+        <state relative-caret-position="205">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
-            <marker date="1522210612567" expanded="false" signature="2152:2167" ph="..." />
-            <marker date="1522210612567" expanded="false" signature="4026:4037" ph="..." />
-            <marker date="1522210612567" expanded="false" signature="4110:4143" ph="..." />
-            <marker date="1522210612567" expanded="false" signature="4483:4494" ph="..." />
-            <marker date="1522210612567" expanded="false" signature="4567:4600" ph="..." />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1522244550627" expanded="false" signature="3237:3252" ph="..." />
+            <marker date="1522244550627" expanded="false" signature="4871:4882" ph="..." />
+            <marker date="1522244550627" expanded="false" signature="4947:4980" ph="..." />
+            <marker date="1522244550627" expanded="false" signature="5280:5291" ph="..." />
+            <marker date="1522244550627" expanded="false" signature="5356:5389" ph="..." />
           </folding>
         </state>
       </provider>
