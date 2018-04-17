@@ -30,24 +30,19 @@
         <entry file="file://$PROJECT_DIR$/protector-frontend/pages/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="87" />
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1523602087226" expanded="false" signature="2438:2450" ph="..." />
-                <marker date="1523602087226" expanded="false" signature="3448:3463" ph="..." />
-                <marker date="1523602087226" expanded="false" signature="5082:5093" ph="..." />
-                <marker date="1523602087226" expanded="false" signature="5158:5191" ph="..." />
-                <marker date="1523602087226" expanded="false" signature="5491:5502" ph="..." />
-                <marker date="1523602087226" expanded="false" signature="5567:5600" ph="..." />
+                <marker date="1523931338330" expanded="false" signature="2393:2405" ph="..." />
+                <marker date="1523931338330" expanded="false" signature="3403:3418" ph="..." />
+                <marker date="1523931338330" expanded="false" signature="5037:5048" ph="..." />
+                <marker date="1523931338330" expanded="false" signature="5113:5146" ph="..." />
+                <marker date="1523931338330" expanded="false" signature="5446:5457" ph="..." />
+                <marker date="1523931338330" expanded="false" signature="5522:5555" ph="..." />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="twitter-turbo.svg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/twitter-turbo.svg">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -192,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +222,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -451,12 +446,13 @@
       <workItem from="1522641400030" duration="23000" />
       <workItem from="1522662685507" duration="890000" />
       <workItem from="1522810581087" duration="691000" />
-      <workItem from="1523602005282" duration="408000" />
+      <workItem from="1523602005282" duration="485000" />
+      <workItem from="1523931330267" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350672000" />
+    <option name="totallyTimeSpent" value="350758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1270" height="1028" extended-state="0" />
@@ -466,8 +462,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50658935" side_tool="true" weight="0.38574424" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49341065" visible="true" weight="0.32664436" />
@@ -495,6 +491,30 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/pages/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1134">
+          <caret line="54" column="73" lean-forward="true" selection-start-line="54" selection-start-column="73" selection-end-line="54" selection-end-column="73" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1523931338330" expanded="false" signature="2393:2405" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="3403:3418" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5037:5048" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5113:5146" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5446:5457" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5522:5555" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/processes.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -508,9 +528,6 @@
           <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/lib/constant.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app_server/models/db.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -574,9 +591,6 @@
           <caret line="13" column="64" lean-forward="true" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="64" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_server/keys/prod/key_prod.pem">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app_client/admin.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -647,12 +661,6 @@
           <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/pages/terms-of-services.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/pages/privacy-policy.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/protector-frontend/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -736,9 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compose/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/protector-frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -753,21 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/img/2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/img/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/twitter.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/turbodl.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icons/twitter-turbo.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -778,16 +768,16 @@
     <entry file="file://$PROJECT_DIR$/protector-frontend/pages/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="47" column="51" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="87" />
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1523602087226" expanded="false" signature="2438:2450" ph="..." />
-            <marker date="1523602087226" expanded="false" signature="3448:3463" ph="..." />
-            <marker date="1523602087226" expanded="false" signature="5082:5093" ph="..." />
-            <marker date="1523602087226" expanded="false" signature="5158:5191" ph="..." />
-            <marker date="1523602087226" expanded="false" signature="5491:5502" ph="..." />
-            <marker date="1523602087226" expanded="false" signature="5567:5600" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="2393:2405" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="3403:3418" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5037:5048" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5113:5146" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5446:5457" ph="..." />
+            <marker date="1523931338330" expanded="false" signature="5522:5555" ph="..." />
           </folding>
         </state>
       </provider>
