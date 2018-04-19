@@ -56,7 +56,7 @@ app.set('view engine', 'ejs');
 app.get('/pages/base.html', function(req, res) {
     let token = jwt.sign({
         data: 'foobar'
-    }, '3340e18c-baba-4b7b-bb6c-d1f17dc7d8b8', { expiresIn: '1h' });
+    }, '3340e18c-baba-4b7b-bb6c-d1f17dc7d8b8', { expiresIn: '3h' });
     res.render('base', {
         link: 'https://videodl.net?token=' + token
     })
