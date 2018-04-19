@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+var jwt = require('jsonwebtoken');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
@@ -51,11 +51,16 @@ app.use(express.static(path.join(__dirname, 'protector-frontend')));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// // set the view engine to ejs
-// app.set('view engine', 'ejs');
-// app.get('/email', function(req, res) {
-//     res.render('views/template')
-// });
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+app.get('/pages/base.html', function(req, res) {
+    let token = jwt.sign({
+        data: 'foobar'
+    }, '3340e18c-baba-4b7b-bb6c-d1f17dc7d8b8', { expiresIn: '1h' });
+    res.render('base', {
+        link: 'https://videodl.net?token=' + token
+    })
+});
 app.use('/api', routesApi);
 
 var optionsRef = {
