@@ -61,7 +61,7 @@ app.get('/pages/base.html', function(req, res) {
         link: 'https://videodl.net?token=' + token
     })
 });
-app.use('/api', routesApi);
+app.use('/photovault/api', routesApi);
 
 var optionsRef = {
     filter: ['relative', 'remote'],

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b1b001ce-a3b9-42fa-9852-10400ba074de" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf" beforeDir="false" afterPath="$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.prod.yml" afterDir="false" />
     </list>
@@ -21,26 +22,26 @@
       <file leaf-file-name="docker-compose.prod.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+            <state relative-caret-position="756">
+              <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_server/routes/index.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="32" column="43" lean-forward="true" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            <state relative-caret-position="378">
+              <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="protector-backend.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="protector-backend.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="126">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -152,9 +153,9 @@
         <option value="$PROJECT_DIR$/protector-frontend/index.html" />
         <option value="$PROJECT_DIR$/protector-frontend/pages/base.html" />
         <option value="$PROJECT_DIR$/views/base.ejs" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf" />
+        <option value="$PROJECT_DIR$/docker-compose.prod.yml" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -197,20 +198,13 @@
             <path>
               <item name="passcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="passcode" type="462c0819:PsiDirectoryNode" />
-              <item name="compose" type="462c0819:PsiDirectoryNode" />
+              <item name="app_server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="passcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="passcode" type="462c0819:PsiDirectoryNode" />
-              <item name="compose" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="passcode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="passcode" type="462c0819:PsiDirectoryNode" />
-              <item name="compose" type="462c0819:PsiDirectoryNode" />
-              <item name="nginx" type="462c0819:PsiDirectoryNode" />
-              <item name="conf.d" type="462c0819:PsiDirectoryNode" />
+              <item name="app_server" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -445,12 +439,27 @@
       <workItem from="1523934223752" duration="395000" />
       <workItem from="1524107590232" duration="706000" />
       <workItem from="1524109296184" duration="4674000" />
-      <workItem from="1525226453007" duration="621000" />
+      <workItem from="1525226453007" duration="1717000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed port">
+      <created>1525227382041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525227382041</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changed port">
+      <created>1525227699492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1525227699492</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357924000" />
+    <option name="totallyTimeSpent" value="359020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1270" height="1028" extended-state="0" />
@@ -482,6 +491,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed port" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed port" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -788,10 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+        <state relative-caret-position="126">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -804,15 +817,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docker-compose.prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        <state relative-caret-position="756">
+          <caret line="36" column="10" lean-forward="true" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compose/nginx/conf.d/protector-backend.conf">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="378">
+          <caret line="63" column="20" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
         </state>
       </provider>
     </entry>
