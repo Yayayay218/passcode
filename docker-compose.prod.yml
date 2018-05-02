@@ -15,6 +15,7 @@ services:
       DATABASE_URL: "mongodb://mongo:27017/protector"
     volumes:
       - /home/app/protector-backend/uploads
+      - /home/turbodl/ftp/files:/www/data
     ports:
       - '3000:3000'
     depends_on:
