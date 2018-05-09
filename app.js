@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 var expressValidator = require('express-validator');
 var paginate = require('express-paginate');
 var swaggerUi = require('swagger-ui-express');
-
+var axios = require('axios')
 var JsonRefs = require('json-refs');
 var YAML = require('js-yaml');
 var cors = require('cors'); // call the cors to fix access control bug.
@@ -53,13 +53,26 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // set the view engine to ejs
 app.set('view engine', 'ejs');
-app.get('/pages/base.html', function(req, res) {
-    let token = jwt.sign({
-        data: 'foobar'
-    }, '3340e18c-baba-4b7b-bb6c-d1f17dc7d8b8', { expiresIn: '3h' });
-    res.render('base', {
-        link: 'https://videodl.net?token=' + token
-    })
+app.get('/pages/base.html', function (req, res) {
+    axios.get('http://astraler.com/turbodl/turbodlwebview.json')
+        .then(docs => {
+            let token = jwt.sign({
+                data: 'foobar'
+            }, '3340e18c-baba-4b7b-bb6c-d1f17dc7d8b8', {expiresIn: '3h'});
+            res.render('base', {
+                link: 'https://videodl.net?token=' + token,
+                webview: docs.data.webviewnumber
+            })
+        })
+        .catch(err => {
+            let token = jwt.sign({
+                data: 'foobar'
+            }, '3340e18c-baba-4b7b-bb6c-d1f17dc7d8b8', {expiresIn: '3h'});
+            res.render('base', {
+                link: 'https://videodl.net?token=' + token,
+                webview: 2
+            })
+        })
 });
 app.use('/photovault/api', routesApi);
 
