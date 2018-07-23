@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="30px" viewBox="0 0 126 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51 (57462) - http://www.bohemiancoding.com/sketch -->
+    <title>Photohub</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.5%" y="-0.8%" width="101.0%" height="102.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Terms-of-Service" transform="translate(-233.000000, -82.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="2414"></rect>
+            <g id="Headers/Header-#1" filter="url(#filter-1)" font-family=".SFNSDisplay, .SF NS Display" font-size="30" font-weight="normal" letter-spacing="-0.6666667">
+                <text id="Photohub">
+                    <tspan x="235.677409" y="106" fill="#FFFFFF">Photo</tspan>
+                    <tspan x="308.120443" y="106" letter-spacing="-0.8333334" fill="#FF9900">hub</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
