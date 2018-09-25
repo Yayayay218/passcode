@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1b001ce-a3b9-42fa-9852-10400ba074de" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/protector-frontend/privacy-policy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protector-frontend/img/Provault@2x.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protector-frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/protector-frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protector-frontend/privacy-policy.html" beforeDir="false" afterPath="$PROJECT_DIR$/protector-frontend/privacy-policy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protector-frontend/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/protector-frontend/terms.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,10 +21,12 @@
     <session id="1203064716">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -29,34 +34,40 @@
           <entry key="conf" value="1" />
           <entry key="html" value="2" />
           <entry key="js" value="1" />
+          <entry key="png" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
+          <entry key="Image" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="5" />
+          <entry key="html" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="5" />
+          <entry key="HTML" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protector-frontend/terms.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3227">
-              <caret line="120" column="54" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
+            <state relative-caret-position="310">
+              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,8 +75,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protector-frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="120" column="29" lean-forward="true" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
+            <state relative-caret-position="304">
+              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="1144">
               <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
               <folding>
                 <element signature="e#966#1345#0" />
@@ -101,11 +116,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protector-frontend/privacy-policy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="438" column="4" lean-forward="true" selection-start-line="438" selection-start-column="4" selection-end-line="438" selection-end-column="4" />
+            <state relative-caret-position="376">
+              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -159,6 +174,9 @@
       <find>protector</find>
       <find>Protector</find>
       <find>affix</find>
+      <find>getProvault</find>
+      <find>getPhotohub</find>
+      <find>Provault</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -176,6 +194,7 @@
       <replace>faq</replace>
       <replace>class</replace>
       <replace>Photohub</replace>
+      <replace>getPhotohub</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -219,7 +238,6 @@
         <option value="$PROJECT_DIR$/app_server/controllers/email_template/activation.ejs" />
         <option value="$PROJECT_DIR$/app_server/controllers/aa.html" />
         <option value="$PROJECT_DIR$/app_server/controllers/email_template/welcome.ejs" />
-        <option value="$PROJECT_DIR$/protector-frontend/index.html" />
         <option value="$PROJECT_DIR$/protector-frontend/pages/base.html" />
         <option value="$PROJECT_DIR$/docker-compose.prod.yml" />
         <option value="$PROJECT_DIR$/app_server/controllers/faq.controller.js" />
@@ -233,8 +251,9 @@
         <option value="$PROJECT_DIR$/protector-frontend/pages/terms-of-services.html" />
         <option value="$PROJECT_DIR$/protector-frontend/pages/privacy-policy.html" />
         <option value="$PROJECT_DIR$/protector-frontend/less/creative.less" />
-        <option value="$PROJECT_DIR$/protector-frontend/terms.html" />
+        <option value="$PROJECT_DIR$/protector-frontend/index.html" />
         <option value="$PROJECT_DIR$/protector-frontend/privacy-policy.html" />
+        <option value="$PROJECT_DIR$/protector-frontend/terms.html" />
       </list>
     </option>
   </component>
@@ -260,7 +279,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="-1730" />
+    <option name="y" value="75" />
     <option name="width" value="1440" />
     <option name="height" value="878" />
   </component>
@@ -270,7 +290,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,6 +306,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,17 +322,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/protector-frontend" />
-      <recent name="$PROJECT_DIR$/protector-frontend/img" />
-      <recent name="$PROJECT_DIR$/views" />
-      <recent name="$PROJECT_DIR$/protector-frontend/img/icons" />
-      <recent name="$PROJECT_DIR$/protector-frontend/pages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/protector-frontend/css" />
       <recent name="$PROJECT_DIR$/app_server/keys" />
       <recent name="$PROJECT_DIR$/app_server" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protector-frontend/img" />
+      <recent name="$PROJECT_DIR$/protector-frontend" />
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/protector-frontend/img/icons" />
+      <recent name="$PROJECT_DIR$/protector-frontend/pages" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -468,7 +488,9 @@
       <workItem from="1532339654863" duration="1961000" />
       <workItem from="1532396156779" duration="3000" />
       <workItem from="1535441499659" duration="324000" />
-      <workItem from="1535641088391" duration="257000" />
+      <workItem from="1535641088391" duration="442000" />
+      <workItem from="1535679386988" duration="6000" />
+      <workItem from="1537841564923" duration="197000" />
     </task>
     <task id="LOCAL-00001" summary="Changed port">
       <created>1525227382041</created>
@@ -495,10 +517,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="376406000" />
+    <option name="totallyTimeSpent" value="376794000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="878" extended-state="0" />
+    <frame x="-1730" y="75" width="1440" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20084566" />
@@ -534,13 +556,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changed port" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swagger/info/index.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_server/keys/dev/key_dev.pem">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -739,9 +754,6 @@
     <entry file="file://$PROJECT_DIR$/protector-frontend/img/icon.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icon@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/protector-frontend/img/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -808,7 +820,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
+        <state relative-caret-position="1144">
           <caret line="79" column="35" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
           <folding>
             <element signature="e#966#1345#0" />
@@ -817,24 +829,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/icon@2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/img/Group2x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/protector-frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="120" column="29" lean-forward="true" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protector-frontend/terms.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3227">
-          <caret line="120" column="54" selection-start-line="120" selection-start-column="54" selection-end-line="120" selection-end-column="54" />
+        <state relative-caret-position="304">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protector-frontend/privacy-policy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="438" column="4" lean-forward="true" selection-start-line="438" selection-start-column="4" selection-end-line="438" selection-end-column="4" />
+        <state relative-caret-position="376">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -843,6 +858,17 @@
             <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protector-frontend/terms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#6;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#7;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
